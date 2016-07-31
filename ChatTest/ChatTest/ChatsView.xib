@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatsViewController" customModule="ChatTest" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="xgJ-1J-51T" id="Iqo-HI-0lz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5O-ST-bKu">
+                    <rect key="frame" x="0.0" y="19" width="375" height="44"/>
+                    <color key="barTintColor" red="0.1137254902" green="0.63921568630000003" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Chats" id="L2G-va-1Yu">
+                            <barButtonItem key="leftBarButtonItem" systemItem="edit" id="cfO-fD-N9n">
+                                <color key="tintColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                            <rightBarButtonItems>
+                                <barButtonItem style="plain" systemItem="stop" id="eRx-AK-w1w">
+                                    <color key="tintColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="didTapClose:" destination="-1" id="4oz-UK-JTV"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="refresh" id="LJO-fL-3Hw">
+                                    <color key="tintColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="didTapRefresh:" destination="-1" id="b3l-HC-Hkp"/>
+                                    </connections>
+                                </barButtonItem>
+                            </rightBarButtonItems>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xgJ-1J-51T">
+                    <rect key="frame" x="0.0" y="63" width="375" height="604"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XnF-UV-3kq"/>
+                        <outlet property="delegate" destination="-1" id="hFn-r9-aYG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="o5O-ST-bKu" secondAttribute="trailing" id="1Hy-y1-vbL"/>
+                <constraint firstItem="xgJ-1J-51T" firstAttribute="leading" secondItem="o5O-ST-bKu" secondAttribute="leading" id="1xS-Vd-x1q"/>
+                <constraint firstAttribute="bottom" secondItem="xgJ-1J-51T" secondAttribute="bottom" id="3lG-T5-maP"/>
+                <constraint firstItem="o5O-ST-bKu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="19" id="Fnz-NW-e1G"/>
+                <constraint firstItem="xgJ-1J-51T" firstAttribute="trailing" secondItem="o5O-ST-bKu" secondAttribute="trailing" id="LCi-iy-31W"/>
+                <constraint firstItem="o5O-ST-bKu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M30-9h-g3g"/>
+                <constraint firstItem="xgJ-1J-51T" firstAttribute="top" secondItem="o5O-ST-bKu" secondAttribute="bottom" id="szd-Os-zIN"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="MessageViewCell" customModule="ChatTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="566" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chica4" translatesAutoresizingMaskIntoConstraints="NO" id="QoY-TS-qWP" customClass="CircularImageView" customModule="ChatTest" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="qnA-BL-jhv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28/12/2016 12:40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdY-SF-Wwk">
+                        <rect key="frame" x="56" y="8" width="113" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="113" id="I9a-1t-qev"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="0.40000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peter Pan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abc-md-dvu">
+                        <rect key="frame" x="177" y="8" width="151" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="151" id="0nV-iJ-YDv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="0.35480057570000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola buenos días. Me gustaría atender este servicio" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-H3-PF3">
+                        <rect key="frame" x="56" y="23" width="502" height="38"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QoY-TS-qWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0zD-Y8-Kjl"/>
+                    <constraint firstItem="abc-md-dvu" firstAttribute="leading" secondItem="KdY-SF-Wwk" secondAttribute="trailing" constant="8" symbolic="YES" id="20z-A7-mSi"/>
+                    <constraint firstItem="gxQ-H3-PF3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="9pU-5V-cNw"/>
+                    <constraint firstItem="abc-md-dvu" firstAttribute="baseline" secondItem="KdY-SF-Wwk" secondAttribute="baseline" id="ONz-hU-7nF"/>
+                    <constraint firstItem="gxQ-H3-PF3" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="OpX-r3-GuE"/>
+                    <constraint firstItem="KdY-SF-Wwk" firstAttribute="leading" secondItem="QoY-TS-qWP" secondAttribute="trailing" constant="3" id="UHp-O0-OQQ"/>
+                    <constraint firstItem="QoY-TS-qWP" firstAttribute="top" secondItem="abc-md-dvu" secondAttribute="top" id="Vc0-MX-FDB"/>
+                    <constraint firstItem="QoY-TS-qWP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="VpQ-9h-CtE"/>
+                    <constraint firstItem="gxQ-H3-PF3" firstAttribute="leading" secondItem="KdY-SF-Wwk" secondAttribute="leading" id="XmY-e4-Wpc"/>
+                    <constraint firstItem="QoY-TS-qWP" firstAttribute="top" secondItem="KdY-SF-Wwk" secondAttribute="top" id="YC2-ZI-1wD"/>
+                    <constraint firstItem="QoY-TS-qWP" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="fET-Kr-dFI"/>
+                    <constraint firstAttribute="bottom" secondItem="gxQ-H3-PF3" secondAttribute="bottom" id="kDa-O8-x1E"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="abc-md-dvu" secondAttribute="bottom" constant="24" id="pMm-1p-HX8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageText" destination="gxQ-H3-PF3" id="DbP-5J-t0b"/>
+                <outlet property="name" destination="abc-md-dvu" id="DES-Jx-JC6"/>
+                <outlet property="sentAt" destination="KdY-SF-Wwk" id="gz2-7A-6n9"/>
+                <outlet property="userImageView" destination="QoY-TS-qWP" id="RJd-8p-Uos"/>
+            </connections>
+            <point key="canvasLocation" x="424" y="501"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chica4" width="75" height="76"/>
+    </resources>
+</document>

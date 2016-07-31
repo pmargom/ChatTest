@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" id="C8O-Yg-6Mn" customClass="ChatViewCell" customModule="ChatTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C8O-Yg-6Mn" id="wyc-Np-dtA">
+                <rect key="frame" x="0.0" y="0.0" width="566" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compra semanal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XH3-J9-mFd">
+                        <rect key="frame" x="85" y="8" width="394" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="TqU-jg-TyY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peter Pan:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obO-dO-UVW">
+                        <rect key="frame" x="85" y="32" width="71" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola, me gustaría atender este servicio." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9e-wb-0UZ">
+                        <rect key="frame" x="85" y="50" width="470" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22/07/2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcy-GO-9cp">
+                        <rect key="frame" x="456" y="10" width="99" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="99" id="5S9-mY-bgC"/>
+                            <constraint firstAttribute="height" constant="21" id="zec-A5-cut"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chica4" translatesAutoresizingMaskIntoConstraints="NO" id="i66-Q2-ERs" customClass="CircularImageView" customModule="ChatTest" customModuleProvider="target">
+                        <rect key="frame" x="12" y="7" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="rWg-vb-WyS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="T9e-wb-0UZ" firstAttribute="bottom" secondItem="wyc-Np-dtA" secondAttribute="bottomMargin" id="3aU-yd-vei"/>
+                    <constraint firstItem="obO-dO-UVW" firstAttribute="top" secondItem="XH3-J9-mFd" secondAttribute="bottom" constant="3" id="4RF-PR-tn6"/>
+                    <constraint firstItem="Zcy-GO-9cp" firstAttribute="top" secondItem="wyc-Np-dtA" secondAttribute="topMargin" constant="2" id="Ay3-fG-k0y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Zcy-GO-9cp" secondAttribute="trailing" constant="3" id="BJ9-YP-Yr9"/>
+                    <constraint firstItem="i66-Q2-ERs" firstAttribute="centerY" secondItem="wyc-Np-dtA" secondAttribute="centerY" id="Nbe-kG-u2A"/>
+                    <constraint firstItem="XH3-J9-mFd" firstAttribute="leading" secondItem="obO-dO-UVW" secondAttribute="leading" id="T6K-cY-QtZ"/>
+                    <constraint firstItem="obO-dO-UVW" firstAttribute="leading" secondItem="i66-Q2-ERs" secondAttribute="trailing" constant="8" symbolic="YES" id="Uwd-jn-2Xy"/>
+                    <constraint firstItem="i66-Q2-ERs" firstAttribute="leading" secondItem="wyc-Np-dtA" secondAttribute="leadingMargin" constant="4" id="YjE-UA-4Ac"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XH3-J9-mFd" secondAttribute="trailing" constant="79" id="j7r-Ku-hEI"/>
+                    <constraint firstItem="Zcy-GO-9cp" firstAttribute="trailing" secondItem="T9e-wb-0UZ" secondAttribute="trailing" id="lwl-0u-Ha6"/>
+                    <constraint firstItem="T9e-wb-0UZ" firstAttribute="top" secondItem="Zcy-GO-9cp" secondAttribute="bottom" constant="19" id="nZv-Uf-qyZ"/>
+                    <constraint firstItem="i66-Q2-ERs" firstAttribute="top" secondItem="wyc-Np-dtA" secondAttribute="topMargin" constant="-1" id="p3a-SB-LGP"/>
+                    <constraint firstItem="XH3-J9-mFd" firstAttribute="top" secondItem="wyc-Np-dtA" secondAttribute="topMargin" id="uOs-BO-pza"/>
+                    <constraint firstItem="T9e-wb-0UZ" firstAttribute="leading" secondItem="i66-Q2-ERs" secondAttribute="trailing" constant="8" symbolic="YES" id="wkg-0L-tgE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chatImageView" destination="i66-Q2-ERs" id="ckn-NM-cJC"/>
+                <outlet property="dateCreated" destination="Zcy-GO-9cp" id="m85-ev-wD5"/>
+                <outlet property="messageText" destination="T9e-wb-0UZ" id="IeF-4j-KPu"/>
+                <outlet property="serviceName" destination="XH3-J9-mFd" id="0H1-xW-SEf"/>
+                <outlet property="serviceOwner" destination="obO-dO-UVW" id="xfy-2w-JyS"/>
+            </connections>
+            <point key="canvasLocation" x="381" y="465"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chica4" width="75" height="76"/>
+    </resources>
+</document>
